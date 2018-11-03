@@ -5,8 +5,9 @@ public class Moteur {
     protected String cylindre;
     protected Double prix;
 
-    public void Moteur(String cylindre, Double prix) {
-
+    public Moteur (String cylindre, Double prix) {
+        this.cylindre = cylindre;
+        this.prix = prix;
     }
 
     public String toString() {

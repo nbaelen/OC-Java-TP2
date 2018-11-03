@@ -36,4 +36,8 @@ public class Vehicule {
     public Moteur getMoteur() {
         return this.moteur;
     }
+
+    public void setMoteur(Moteur moteur) {
+        this.moteur = moteur;
+    }
 }

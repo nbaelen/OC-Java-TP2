@@ -1,4 +1,4 @@
-public class BarreDeToit {
+public class BarreDeToit implements Option {
 
     //Attributs
     private Double prix = 29.9;
