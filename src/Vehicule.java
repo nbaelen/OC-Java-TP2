@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Vehicule {
@@ -5,9 +6,14 @@ public class Vehicule {
     //Attributs
     protected Double prix;
     protected String nom;
-    protected List<Option> options;
+    protected List<Option> options = new ArrayList<Option>();
     protected Marque nomMarque;
     protected Moteur moteur;
+
+    //Constructeur
+    public Vehicule(Marque marque) {
+        this.nomMarque = marque;
+    }
 
     public String toString() {
         for (Option opt: getOptions()) {

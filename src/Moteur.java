@@ -5,13 +5,14 @@ public class Moteur {
     protected String cylindre;
     protected Double prix;
 
-    public Moteur (String cylindre, Double prix) {
+    public Moteur (TypeMoteur typeMoteur, String cylindre, Double prix) {
+        this.type = typeMoteur;
         this.cylindre = cylindre;
         this.prix = prix;
     }
 
     public String toString() {
-        return "";
+        return "Moteur " + this.type + " " + this.cylindre + " (" + this.getPrix() + "€)";
     }
 
     public Double getPrix() {

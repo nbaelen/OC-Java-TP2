@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Garage {
 
     //Attributs
-    private List<Vehicule> voitures;
+    private List<Vehicule> voitures = new ArrayList<Vehicule>();
 
     public String toString() {
 
