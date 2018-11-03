@@ -10,7 +10,7 @@ public class Garage {
         return "";
     }
 
-    public void add(Vehicule voit) {
+    public void addVoiture(Vehicule voit) {
         this.voitures.add(voit);
     }
 }
