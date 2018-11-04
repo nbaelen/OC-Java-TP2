@@ -60,6 +60,12 @@ public class Garage implements Serializable {
         this.saveGarage();
     }
 
+    public void deleteAllVoiture() {
+        for (int i=this.voitures.size(); i>0; i--) {
+            deleteVoiture(i);
+        }
+    }
+
     public void saveGarage() {
         ObjectOutputStream oos;
         try {

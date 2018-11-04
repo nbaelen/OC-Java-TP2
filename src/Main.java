@@ -6,9 +6,7 @@ public class Main {
         //garage.deleteVoiture(4);
         //System.out.println(garage);
 
-
-
-        /*Vehicules.Vehicule lag1 = new Vehicules.Lagouna();
+        Vehicules.Vehicule lag1 = new Vehicules.Lagouna();
         lag1.setMoteur(new Moteurs.MoteurEssence("150 Chevaux", 10256d));
         lag1.addOption(new Options.GPS());
         lag1.addOption(new Options.SiegeChauffant());
@@ -46,7 +44,9 @@ public class Main {
         d4_2.addOption(new Options.Climatisation());
         d4_2.addOption(new Options.GPS());
         d4_2.addOption(new Options.VitreElectrique());
-        garage.addVoiture(d4_2);*/
+        garage.addVoiture(d4_2);
+
+        garage.deleteAllVoiture();
 
         System.out.println(garage);
     }
