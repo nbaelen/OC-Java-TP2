@@ -27,7 +27,7 @@ public class Vehicule implements Serializable {
 
         int i = 0;
         for (Option opt: getOptions()) {
-            description += opt.getClass().getName() + " (" + opt.getPrix() + "€)";
+            description += opt.getClass().getSimpleName() + " (" + opt.getPrix() + "€)";
             if (!(i++ == getOptions().size() - 1)) {
                 description += ", ";
             }
@@ -40,6 +40,7 @@ public class Vehicule implements Serializable {
 
     public void addOption(Option opt) {
         this.options.add(opt);
+        this.setPrix();
     }
 
     public Marque getMarque() {
@@ -51,13 +52,15 @@ public class Vehicule implements Serializable {
     }
 
     public Double getPrix() {
-        //A améliorer et revoir
-        double prix = 0.0;
+        return this.prix;
+    }
+
+    protected void setPrix() {
+        this.prix = 0.0;
         for (Option opt: getOptions()) {
-            prix += opt.getPrix();
+            this.prix += opt.getPrix();
         }
-        prix += this.moteur.getPrix();
-        return prix;
+        this.prix += this.moteur.getPrix();
     }
 
     public Moteur getMoteur() {
@@ -66,5 +69,6 @@ public class Vehicule implements Serializable {
 
     public void setMoteur(Moteur moteur) {
         this.moteur = moteur;
+        this.setPrix();
     }
 }

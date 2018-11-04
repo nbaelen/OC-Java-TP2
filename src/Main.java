@@ -3,8 +3,7 @@ public class Main {
         Garage garage = new Garage();
         System.out.println(garage);
 
-        //garage.deleteVoiture(4);
-        //System.out.println(garage);
+        garage.deleteAllVoiture();
 
         Vehicules.Vehicule lag1 = new Vehicules.Lagouna();
         lag1.setMoteur(new Moteurs.MoteurEssence("150 Chevaux", 10256d));
@@ -45,10 +44,6 @@ public class Main {
         d4_2.addOption(new Options.GPS());
         d4_2.addOption(new Options.VitreElectrique());
         garage.addVoiture(d4_2);
-
-        garage.deleteAllVoiture();
-
-        System.out.println(garage);
     }
 
 }

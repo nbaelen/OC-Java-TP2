@@ -1,16 +1,15 @@
 import Vehicules.Vehicule;
 
-import java.io.Serializable;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.io.*;
 
 public class Garage implements Serializable {
 
     //Attributs
     private List<Vehicule> voitures = new ArrayList<>();
 
-    //Constructeur par défaut
+    //Constructeur par défaut, si garage.txt présent, essaie de récupérer les objets à l'intérieurs
     public Garage() {
         ObjectInputStream ois;
         try {
@@ -23,15 +22,13 @@ public class Garage implements Serializable {
                 while (true) {
                     this.voitures.add((Vehicule) ois.readObject());
                 }
-            } catch (EOFException e) {
-                System.out.println("Le fichier garage.txt a bien été lu !");
-            }
+            } catch (EOFException e) {}
 
-            //ois.close();
+            ois.close();
         } catch (FileNotFoundException e) {
             System.err.println("Le fichier garage.txt n'a pas été trouvé !");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Erreur lors de la lecture du fichier !");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
