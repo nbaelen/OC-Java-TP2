@@ -10,7 +10,9 @@ public class Main {
         lag1.addOption(new VitreElectrique());
         garage.addVoiture(lag1);
 
-        Vehicule A300B_2 = new A300B();
+        System.out.println(lag1);
+
+/*        Vehicule A300B_2 = new A300B();
         A300B_2.setMoteur(new MoteurElectrique("1500 W", 1234d));
         A300B_2.addOption(new Climatisation());
         A300B_2.addOption(new BarreDeToit());
@@ -41,6 +43,7 @@ public class Main {
         d4_2.addOption(new Climatisation());
         d4_2.addOption(new GPS());
         d4_2.addOption(new VitreElectrique());
-        garage.addVoiture(d4_2);
+        garage.addVoiture(d4_2);*/
     }
+
 }

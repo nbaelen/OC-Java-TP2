@@ -16,11 +16,20 @@ public class Vehicule {
     }
 
     public String toString() {
+        String description = "+ Voiture " + getMarque()
+                + " : " + this.moteur.toString() + " [";
+
+        int i = 0;
         for (Option opt: getOptions()) {
-            
+            description += opt.getClass().getName() + " (" + opt.getPrix() + "€)";
+            if (!(i++ == getOptions().size() - 1)) {
+                description += ", ";
+            }
         }
+
+        description += "] d'une valeur totale de " + this.getPrix() + "€";
         
-        return "";
+        return description;
     }
 
     public void addOption(Option opt) {
@@ -32,11 +41,17 @@ public class Vehicule {
     }
 
     public List<Option> getOptions() {
-        return this.getOptions();
+        return this.options;
     }
 
     public Double getPrix() {
-        return this.prix;
+        //A améliorer et revoir
+        double prix = 0.0;
+        for (Option opt: getOptions()) {
+            prix += opt.getPrix();
+        }
+        prix += this.moteur.getPrix();
+        return prix;
     }
 
     public Moteur getMoteur() {
