@@ -1,3 +1,5 @@
+package Moteurs;
+
 import java.io.Serializable;
 
 public class Moteur implements Serializable {

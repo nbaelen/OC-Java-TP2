@@ -1,3 +1,8 @@
+package Vehicules;
+
+import Moteurs.Moteur;
+import Options.Option;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

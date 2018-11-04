@@ -1,3 +1,5 @@
+package Moteurs;
+
 public class MoteurHybride extends Moteur {
 
     //Constructeur

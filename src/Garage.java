@@ -1,3 +1,5 @@
+import Vehicules.Vehicule;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +29,7 @@ public class Garage implements Serializable {
 
             //ois.close();
         } catch (FileNotFoundException e) {
-            System.out.println("Le fichier garage.txt n'a pas été trouvé !");
+            System.err.println("Le fichier garage.txt n'a pas été trouvé !");
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -71,7 +73,7 @@ public class Garage implements Serializable {
 
             oos.close();
         } catch (FileNotFoundException e) {
-            System.out.println("Le fichier garage.txt n'a pas été trouvé !");
+            System.err.println("Le fichier garage.txt n'a pas été trouvé !");
         } catch (IOException e) {
             e.printStackTrace();
         }

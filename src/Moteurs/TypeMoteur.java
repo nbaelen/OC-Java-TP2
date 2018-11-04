@@ -1,3 +1,5 @@
+package Moteurs;
+
 public enum TypeMoteur {
     DIESEL,
     ESSENCE,

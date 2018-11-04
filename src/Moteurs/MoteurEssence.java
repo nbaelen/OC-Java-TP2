@@ -1,3 +1,5 @@
+package Moteurs;
+
 public class MoteurEssence extends Moteur {
 
     //Constructeur

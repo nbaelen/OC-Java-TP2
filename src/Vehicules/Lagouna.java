@@ -1,3 +1,5 @@
+package Vehicules;
+
 public class Lagouna extends Vehicule {
 
     //Constructeur

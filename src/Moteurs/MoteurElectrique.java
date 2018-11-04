@@ -1,3 +1,5 @@
+package Moteurs;
+
 public class MoteurElectrique extends Moteur {
 
     //Constructeur

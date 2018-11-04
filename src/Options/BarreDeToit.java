@@ -1,9 +1,11 @@
+package Options;
+
 import java.io.Serializable;
 
-public class Climatisation implements Option, Serializable {
+public class BarreDeToit implements Option, Serializable {
 
     //Attributs
-    private Double prix = 347.3;
+    private Double prix = 29.9;
 
     public Double getPrix() {
         return this.prix;

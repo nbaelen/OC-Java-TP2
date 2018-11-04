@@ -1,3 +1,5 @@
+package Options;
+
 import java.io.Serializable;
 
 public class VitreElectrique implements Option, Serializable {

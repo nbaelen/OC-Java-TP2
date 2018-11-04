@@ -1,3 +1,5 @@
+package Vehicules;
+
 public class A300B extends Vehicule {
 
     //Constructeur
