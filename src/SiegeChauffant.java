@@ -1,4 +1,6 @@
-public class SiegeChauffant implements Option {
+import java.io.Serializable;
+
+public class SiegeChauffant implements Option, Serializable {
 
     //Attributs
     private Double prix = 562.9;

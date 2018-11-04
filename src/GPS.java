@@ -1,4 +1,6 @@
-public class GPS implements Option {
+import java.io.Serializable;
+
+public class GPS implements Option, Serializable {
 
     //Attributs
     private Double prix = 113.5;

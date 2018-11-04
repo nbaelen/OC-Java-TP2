@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Vehicule {
+public class Vehicule implements Serializable {
 
     //Attributs
     protected Double prix;

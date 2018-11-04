@@ -1,4 +1,6 @@
-public class Moteur {
+import java.io.Serializable;
+
+public class Moteur implements Serializable {
 
     //Attributs
     protected TypeMoteur type;

@@ -1,4 +1,6 @@
-public class Climatisation implements Option {
+import java.io.Serializable;
+
+public class Climatisation implements Option, Serializable {
 
     //Attributs
     private Double prix = 347.3;
